@@ -1,8 +1,9 @@
+
 const Cabecalho = () => {
     return(
-        <body className=" w-screen h-full flex flex-col items-center justify-center">
+        <div className=" w-screen h-full flex flex-col items-center justify-center">
         <main
-        className=" w-64 mt-10">
+        className=" w-64 mt-10 ">
             <div >
                 <img 
                 src="/imagens/hireMe.jpg"
@@ -10,9 +11,9 @@ const Cabecalho = () => {
                 className=" w-full"                
                 />
             </div>
-            <p className=" text-center">Encontre o Profissional para o seu Trabalho!</p>
+            <p className=" text-center text-primary">Encontre o Profissional para o seu Trabalho!</p>
         </main>
-        </body>
+        </div>
     )
 }
 
