@@ -1,8 +1,8 @@
 import { Profissional } from "../entidades/profissional"
 
-
 interface PropsLista {
-    profissionais: Profissional[]
+    profissionais: Profissional[],
+    onSelect: (proficional: Profissional) => void
 }
 
 
@@ -26,6 +26,10 @@ const Lista = (props: PropsLista) => {
                                     style: 'currency',
                                     currency: 'BRL',})} Por Hora</div>
                             <div className="descricao break-words ">{profissional.descricao}</div>
+                            <button
+                            className=" bg-primary text-white font-bold rounded w-28 shadow-lg"
+                            onClick={() => props.onSelect(profissional)}
+                            >Contratar</button>
                         </div>
                     </li>  ))}
             </ul> )
